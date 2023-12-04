@@ -1,3 +1,10 @@
+import chalk from 'chalk';
+import boxen from 'boxen';
+
+function write(text) {
+    process.stdout.write(text);
+}
+
 console.log(boxen(chalk.bgGreen.magenta('Hello world'), {borderStyle:'round'}));
  
 console.log(boxen(chalk.bgBlue.magentaBright('Vau'),{padding:6, margin:2, borderstyle: "doubleSingle", width: 7, borderColor:'red'}));
@@ -6,7 +13,7 @@ console.log(boxen(chalk.bgRed.strikethrough('Tervist'), {borderStyle:'double', b
  
 console.log(boxen(chalk.overline.bgCyanBright.magentaBright('Jah'), {borderStyle:'single', borderColor:'red', title: 'kromps', titleAlignment: 'center'}));
  
-console.log(boxen(chalk.bgRedBright.overline('ei'), {title: 'eegrid', borderStyle:'arrow', borderColor:'black'}));
+console.log(boxen(chalk.bgRedBright.overline('ei'), {title: 'eegrid', borderStyle:'arrow', borderColor:'yellow'}));
  
 console.log(boxen(chalk.bgBlack.italic('Maitea'), {padding: 4, margin: 3, width: 12, float:'center', borderColor:'blue'}));
  
